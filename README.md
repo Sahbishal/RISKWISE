@@ -6,7 +6,6 @@
 [![Python](https://img.shields.io/badge/Backend-FastAPI%20%7C%20Python%203.12-emerald)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/Frontend-React%20%7C%20Vite%20%7C%20Tailwind-cyan)](https://react.de
 
-
 ![Uploading image.png…]()
 
 
