@@ -1,0 +1,21 @@
+REGULATORY DOCUMENT: Guidance on Preparing Audit-Ready Suspicious Activity Reports (SAR)
+ISSUING AUTHORITY: Financial Crimes Enforcement Network (FinCEN)
+DOCUMENT ID: DOC-SAR-2024-03
+CATEGORY: SAR_GUIDANCE
+
+SECTION 1: MANDATORY REPORTING THRESHOLDS
+A financial institution is obligated to file a Suspicious Activity Report (SAR) with FinCEN no later than 30 calendar days after the date of initial detection of suspicious activity involving:
+- Any transaction involving potential money laundering or Bank Secrecy Act violations exceeding $5,000.
+- Transactions with no apparent economic or lawful purpose where the institution knows of no reasonable explanation after examining available facts.
+- Rapid movement of funds through shell companies or foreign intermediaries.
+
+SECTION 2: AUDIT-READY INVESTIGATION REPORT REQUIREMENTS
+An investigation report supporting a SAR filing or decision must contain five essential core components:
+1. Subject Identity & Baseline: Complete customer profile, historical baseline activity, and onboarding KYC status.
+2. Chronological Timeline: Clear visual or textual event-by-event timeline detailing initial detection, anomaly triggers, and escalation points.
+3. Quantitative Anomaly Breakdown: Explicit decomposition of risk score calculation detailing individual factor weights (amount spike, velocity, geo anomaly).
+4. Evidentiary Regulatory Citation: Specific references to governing statutes or guidelines justifying the escalation.
+5. Recommended Action: Clear decision recommendation (SAR Filing, Account Restraint, Relationship Termination, or Closed No Action).
+
+SECTION 3: CONFIDENTIALITY & RECORD RETENTION
+SAR filings and supporting investigation reports must be retained for a minimum of 5 years from the date of filing. Disclosure of SAR existence to subjects is strictly prohibited under 31 U.S.C. 5318(g)(2).

@@ -1,0 +1,22 @@
+REGULATORY DOCUMENT: High-Risk Jurisdictions & Geographic Anomaly Framework
+ISSUING AUTHORITY: Financial Action Task Force (FATF) / OFAC Compliance Standards
+DOCUMENT ID: DOC-FATF-2024-04
+CATEGORY: FATF_SANCTIONS
+
+SECTION 1: GEOGRAPHIC ANOMALY IDENTIFICATION
+Transactions originating from or terminating in jurisdictions subject to FATF Call for Action or Increased Monitoring require heightened scrutiny. Key indicators include:
+- Uncharacteristic foreign wire transfers to non-cooperative offshore financial centers.
+- IP address geolocation mismatch exceeding 2,000 miles from registered customer address within a 6-hour period.
+- Intermediary banking routes traversing sanctioned or high-risk transit hubs.
+
+SECTION 2: AUTOMATED RISK WEIGHTING FOR JURISDICTIONAL ANOMALIES
+In automated risk scoring models, geographic anomalies trigger specific contribution weights:
+- Primary High-Risk Destination (e.g., sanctioned territory or non-FATF compliant jurisdiction): +30 to +40 points.
+- Rapid IP / Device Geolocation Jump: +20 to +25 points.
+- Structuring across foreign corridors: +25 points.
+
+SECTION 3: MANDATORY SANCTIONS ESCALATION PROTOCOL
+If a transaction matches an active OFAC Specially Designated Nationals (SDN) list or sanctioned jurisdiction:
+1. Immediate blocking/freezing of funds prior to settlement.
+2. Immediate notification to regulatory authorities within 10 business days.
+3. Creation of an immutable audit trail documenting decision rationale.

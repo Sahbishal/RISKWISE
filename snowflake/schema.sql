@@ -1,0 +1,115 @@
+-- RISKWISE: Enterprise Snowflake Schema Definition
+-- Hackathon Track: Risk, Fraud and Regulatory Intelligence Copilot
+
+CREATE DATABASE IF NOT EXISTS RISKWISE_DB;
+USE DATABASE RISKWISE_DB;
+
+CREATE SCHEMA IF NOT EXISTS PUBLIC;
+USE SCHEMA PUBLIC;
+
+-- 1. CUSTOMERS TABLE
+CREATE TABLE IF NOT EXISTS CUSTOMERS (
+    customer_id VARCHAR(50) PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    email VARCHAR(150),
+    phone VARCHAR(50),
+    country VARCHAR(100),
+    risk_rating VARCHAR(20), -- LOW, MEDIUM, HIGH, CRITICAL
+    customer_since DATE,
+    occupation VARCHAR(100),
+    annual_income NUMBER(15, 2),
+    kyc_status VARCHAR(50), -- VERIFIED, PENDING, EXPIRED
+    pep_flag BOOLEAN DEFAULT FALSE, -- Politically Exposed Person
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- 2. ACCOUNTS TABLE
+CREATE TABLE IF NOT EXISTS ACCOUNTS (
+    account_id VARCHAR(50) PRIMARY KEY,
+    customer_id VARCHAR(50) REFERENCES CUSTOMERS(customer_id),
+    account_type VARCHAR(50), -- SAVINGS, CHECKING, BUSINESS, INVESTMENT
+    currency VARCHAR(10) DEFAULT 'USD',
+    balance NUMBER(15, 2),
+    account_status VARCHAR(20), -- ACTIVE, FROZEN, CLOSED
+    opened_date DATE,
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- 3. TRANSACTIONS TABLE
+CREATE TABLE IF NOT EXISTS TRANSACTIONS (
+    transaction_id VARCHAR(50) PRIMARY KEY,
+    account_id VARCHAR(50) REFERENCES ACCOUNTS(account_id),
+    customer_id VARCHAR(50) REFERENCES CUSTOMERS(customer_id),
+    amount NUMBER(15, 2),
+    currency VARCHAR(10) DEFAULT 'USD',
+    transaction_type VARCHAR(50), -- WIRE_TRANSFER, ATM_WITHDRAWAL, ONLINE_PAYMENT, POS, CRYPTO_PURCHASE
+    merchant_name VARCHAR(150),
+    merchant_category VARCHAR(100),
+    origin_country VARCHAR(100),
+    destination_country VARCHAR(100),
+    device_id VARCHAR(100),
+    ip_address VARCHAR(50),
+    timestamp TIMESTAMP_NTZ,
+    status VARCHAR(20), -- COMPLETED, PENDING, REJECTED, FLAGGED
+    is_anomaly BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- 4. RISK_ALERTS TABLE
+CREATE TABLE IF NOT EXISTS RISK_ALERTS (
+    alert_id VARCHAR(50) PRIMARY KEY,
+    customer_id VARCHAR(50) REFERENCES CUSTOMERS(customer_id),
+    transaction_id VARCHAR(50) REFERENCES TRANSACTIONS(transaction_id),
+    risk_score NUMBER(5, 2), -- 0 to 100
+    risk_level VARCHAR(20), -- LOW, MEDIUM, HIGH, CRITICAL
+    primary_risk_signal VARCHAR(150),
+    status VARCHAR(30), -- OPEN, UNDER_INVESTIGATION, RESOLVED_FALSE_POSITIVE, RESOLVED_SAR_FILED
+    alert_date TIMESTAMP_NTZ,
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- 5. RISK_SIGNALS TABLE
+CREATE TABLE IF NOT EXISTS RISK_SIGNALS (
+    signal_id VARCHAR(50) PRIMARY KEY,
+    alert_id VARCHAR(50) REFERENCES RISK_ALERTS(alert_id),
+    customer_id VARCHAR(50) REFERENCES CUSTOMERS(customer_id),
+    signal_type VARCHAR(100), -- AMOUNT_ANOMALY, FREQUENCY_SPIKE, GEO_ANOMALY, RAPID_FUNDS_MOVEMENT, HIGH_RISK_COUNTRY
+    severity VARCHAR(20), -- LOW, MEDIUM, HIGH, CRITICAL
+    contribution_score NUMBER(5, 2),
+    evidence_summary TEXT,
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- 6. INVESTIGATIONS TABLE
+CREATE TABLE IF NOT EXISTS INVESTIGATIONS (
+    case_id VARCHAR(50) PRIMARY KEY,
+    alert_id VARCHAR(50) REFERENCES RISK_ALERTS(alert_id),
+    customer_id VARCHAR(50) REFERENCES CUSTOMERS(customer_id),
+    assigned_analyst VARCHAR(100),
+    investigation_status VARCHAR(50), -- IN_PROGRESS, ESCALATED, CLOSED_NO_ACTION, SAR_FILED
+    summary TEXT,
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP(),
+    updated_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- 7. REGULATORY_DOCUMENTS TABLE
+CREATE TABLE IF NOT EXISTS REGULATORY_DOCUMENTS (
+    doc_id VARCHAR(50) PRIMARY KEY,
+    title VARCHAR(255),
+    category VARCHAR(100), -- AML_BSA, KYC, SAR_GUIDANCE, SANCTIONS, FATF
+    issuing_authority VARCHAR(150),
+    effective_date DATE,
+    content TEXT,
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- 8. INVESTIGATION_REPORTS TABLE
+CREATE TABLE IF NOT EXISTS INVESTIGATION_REPORTS (
+    report_id VARCHAR(50) PRIMARY KEY,
+    case_id VARCHAR(50) REFERENCES INVESTIGATIONS(case_id),
+    customer_id VARCHAR(50) REFERENCES CUSTOMERS(customer_id),
+    generated_by VARCHAR(100),
+    report_data VARIANT, -- JSON formatted report body
+    created_at TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);

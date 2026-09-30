@@ -1,0 +1,19 @@
+REGULATORY DOCUMENT: Customer Due Diligence (CDD) & Know Your Customer (KYC) Guidance
+ISSUING AUTHORITY: Federal Financial Institutions Examination Council (FFIEC)
+DOCUMENT ID: DOC-KYC-2024-01
+CATEGORY: KYC
+
+SECTION 1: CUSTOMER RISK PROFILING
+Financial institutions are required to establish customer risk profiles at account onboarding and update them continuously based on transactional behavior. Risk factors include:
+- Occupation & Expected Activity: Baseline transaction velocity and average amount must be established during initial CDD.
+- Geographic Location: Customers maintaining address links or transferring funds to high-risk foreign jurisdictions require heightened monitoring.
+- Politically Exposed Persons (PEPs): Senior foreign political figures or their immediate family members automatically default to HIGH risk classification.
+
+SECTION 2: ONGOING MONITORING & TRIGGER EVENTS
+A customer profile must be re-assessed upon any of the following trigger events:
+1. Deviations > 200% from expected monthly volume established during onboarding.
+2. Material changes in geographic transaction destinations.
+3. Unexplained structural changes in counterparty relationships.
+
+SECTION 3: CONSEQUENCES OF KYC DEFICIENCIES
+Failure to update Customer Risk Ratings following severe transactional alerts constitutes a regulatory deficiency under 31 U.S.C. 5318(h), subjecting the institution to civil money penalties and mandatory enforcement action.

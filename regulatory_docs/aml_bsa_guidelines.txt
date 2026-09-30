@@ -1,0 +1,22 @@
+REGULATORY DOCUMENT: Bank Secrecy Act (BSA) & Anti-Money Laundering (AML) Compliance Standard
+ISSUING AUTHORITY: Financial Crimes Enforcement Network (FinCEN) / Federal Reserve Board
+DOCUMENT ID: DOC-AML-2024-V2
+CATEGORY: AML_BSA
+
+SECTION 1: TRANSACTION MONITORING & ANOMALY DETECTION
+Financial institutions must maintain automated transaction monitoring systems capable of identifying unusual patterns of account activity. Key monitoring triggers include:
+1. Amount Anomalies: Transactions exceeding 3x the customer's 90-day rolling historical transaction average or sudden single transfers exceeding $10,000.
+2. Velocity & Frequency Spikes: More than 5 high-value transactions executed within a 24-hour window for accounts previously exhibiting low-frequency usage.
+3. Rapid Movement of Funds (Pass-Through Activity): Funds deposited via wire transfer or ACH and subsequently transferred out to high-risk third parties or foreign accounts within 48 hours with minimal residual balance retained.
+
+SECTION 2: ENHANCED DUE DILIGENCE (EDD) FOR HIGH-RISK TRANSACTIONS
+When an account triggers multiple anomaly signals (e.g., combined amount spike, rapid velocity, and international destination), compliance personnel must immediately open an internal investigation case. Enhanced Due Diligence requires:
+- Re-verifying source of funds and beneficial ownership.
+- Requesting underlying trade or transfer documentation.
+- Conducting adverse media and sanctions screening.
+
+SECTION 3: CONSOLIDATED RISK SCORING CRITERIA
+Risk scores are calculated on a scale of 0 to 100 based on composite anomaly metrics:
+- 0 to 39 (LOW): Normal operational variance; routine monitoring.
+- 40 to 69 (MEDIUM): Moderately elevated risk; mandatory secondary compliance review.
+- 70 to 100 (HIGH / CRITICAL): Severe anomaly cluster; immediate freeze recommendation and mandatory SAR review within 30 days.
