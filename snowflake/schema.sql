@@ -1,5 +1,6 @@
 -- RISKWISE: Enterprise Snowflake Schema Definition
--- Hackathon Track: Risk, Fraud and Regulatory Intelligence Copilot
+-- Hackathon Track: Risk, Fraud and Regulatory Intelligence  Copilot
+
 
 CREATE DATABASE IF NOT EXISTS RISKWISE_DB;
 USE DATABASE RISKWISE_DB;
