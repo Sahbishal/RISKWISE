@@ -1,10 +1,14 @@
-# RISKWISE – Risk, Fraud & Regulatory Intelligence Copilot
+<img width="1578" height="717" alt="image" src="https://github.com/user-attachments/assets/a31ecd53-21cc-4f85-bd85-35fe918e1f13" /><img width="1619" height="717" alt="image" src="https://github.com/user-attachments/assets/c82df6c9-bffb-49b5-b986-4b83d4bc2515" /># RISKWISE – Risk, Fraud & Regulatory Intelligence Copilot
 
 [![Snowflake](https://img.shields.io/badge/Snowflake-CoCo%20CLI%20Hackathon-00A1E9?logo=snowflake&logoColor=white)](https://www.snowflake.com)
 [![Track](https://img.shields.io/badge/Track-Risk%2C%20Fraud%20%26%20Regulatory%20Intelligence-blue)](#)
 [![Team](https://img.shields.io/badge/Team-Electron-purple)](#)
 [![Python](https://img.shields.io/badge/Backend-FastAPI%20%7C%20Python%203.12-emerald)](https://fastapi.tiangolo.com)
-[![React](https://img.shields.io/badge/Frontend-React%20%7C%20Vite%20%7C%20Tailwind-cyan)](https://react.dev)
+[![React](https://img.shields.io/badge/Frontend-React%20%7C%20Vite%20%7C%20Tailwind-cyan)](https://react.de
+
+
+![Uploading image.png…]()
+
 
 ---
 
