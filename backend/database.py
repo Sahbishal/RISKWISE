@@ -4,8 +4,6 @@ import pandas as pd
 from typing import Dict, Any, List
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "riskwise.db")
-
-
 SNOWFLAKE_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
 SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
 SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
