@@ -17,6 +17,8 @@
 
 Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Snowflake**, **Snowflake Cortex AI**, and **Snowflake CoCo CLI** to transform complex transactional monitoring into an explainable, grounded intelligence workflow.
 
+
+this core technology is about data storing and implementation
 ---
 
 ## Core Product Workflow
