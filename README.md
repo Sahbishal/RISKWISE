@@ -24,7 +24,6 @@ Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Sn
   Suspicious      Visual Timeline      Factor Score       Grounded RAG QA       Downloadable
  Transactions      & Profile            Decomposition       (Cortex AI)          PDF Dossier
 ```
-
 ---
 
 ## Enterprise Feature Highlights
