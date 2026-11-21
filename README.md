@@ -18,9 +18,6 @@ Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Sn
 
 
 
-
-
-
 ```
 
 [ DETECT ] ---> [ INVESTIGATE ] ---> [ UNDERSTAND ] ---> [ ASK COPILOT ] ---> [ REPORT ]
