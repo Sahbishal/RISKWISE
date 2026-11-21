@@ -15,8 +15,6 @@ Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Sn
 
 ## Core Product Workflow
 
-
-
 ```
 [ DETECT ] ---> [ INVESTIGATE ] ---> [ UNDERSTAND ] ---> [ ASK COPILOT ] ---> [ REPORT ]
   Identify         Customer 360        Explainable        Natural Language     Audit-Ready
