@@ -1,3 +1,4 @@
+
 <img width="1578" height="717" alt="image" src="https://github.com/user-attachments/assets/a31ecd53-21cc-4f85-bd85-35fe918e1f13" /><img width="1619" height="717" alt="image" src="https://github.com/user-attachments/assets/c82df6c9-bffb-49b5-b986-4b83d4bc2515" /># RISKWISE – Risk, Fraud & Regulatory Intelligence Copilot
 
 [![Snowflake](https://img.shields.io/badge/Snowflake-CoCo%20CLI%20Hackathon-00A1E9?logo=snowflake&logoColor=white)](https://www.snowflake.com)
@@ -14,6 +15,7 @@
 Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Snowflake**, **Snowflake Cortex AI**, and **Snowflake CoCo CLI** to transform complex transactional monitoring into an explainable, grounded intelligence workflow.
 
 ## Core Product Workflow
+
 
 
 
