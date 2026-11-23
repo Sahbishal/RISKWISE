@@ -49,7 +49,6 @@ Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Sn
 ### 5. REPORT – Audit-Ready PDF Dossier Generation
 - **One-Click PDF Export**: Generates compliant, structured investigation reports using ReportLab.
 - **Core Components**: Case ID, Customer ID, Risk score decomposition table, transaction matrix, visual timeline, grounded regulatory citations, and recommended next steps.
-
 ---
 
 ## Hero Showcase Case: Customer C102 (Alexander Vance)
