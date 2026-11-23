@@ -8,7 +8,6 @@
 [![React](https://img.shields.io/badge/Frontend-React%20%7C%20Vite%20%7C%20Tailwind-cyan)](https://react.de
 ![Uploading image.png…]()
 ---
-
 ## Executive Summary
 **RISKWISE** is an enterprise-grade AI Copilot designed for **Risk Analysts, Fraud Investigators, AML Officers, and Compliance Auditors**. It bridges structured enterprise transaction telemetry with unstructured regulatory knowledge bases, empowering compliance teams to detect, investigate, query, and file audit-ready reports in a unified enterprise workspace.
 
