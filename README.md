@@ -20,6 +20,7 @@ Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Sn
  Transactions      & Profile            Decomposition       (Cortex AI)          PDF Dossier
 ```
 ---
+
 ## Enterprise Feature Highlights
 
 ### 1. DETECT – Executive Overview & Real-time Alerts
