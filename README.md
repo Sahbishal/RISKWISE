@@ -65,7 +65,6 @@ RISKWISE includes a deterministic end-to-end demonstration workflow:
 6. **Reporting**: Analyst clicks **Generate Report PDF** to download an audit-ready dossier (`REP-C102-*.pdf`).
 
 ---
-
 ## Snowflake & Snowflake CoCo CLI Integration
 
 ```
