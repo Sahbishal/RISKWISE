@@ -23,7 +23,6 @@ Built for the **Snowflake CoCo CLI Hackathon**, RISKWISE natively leverages **Sn
 ---
 
 
-
 ## Enterprise Feature Highlights
 
 ### 1. DETECT – Executive Overview & Real-time Alerts
